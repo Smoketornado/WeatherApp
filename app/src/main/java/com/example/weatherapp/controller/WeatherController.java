@@ -13,7 +13,7 @@ import retrofit2.Response;
  * Handles API calls and data processing
  */
 public class WeatherController {
-    private static final String API_KEY = "97daa9137d08631d85e7726426ab0665"; // Mein API Key
+    private static final String API_KEY = "YOUR_API_KEY_HERE"; // Mein API Key
     private static final String UNITS = "metric"; // Einheit auf Metrisch
     
     private WeatherApiService weatherService;
