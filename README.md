@@ -47,6 +47,18 @@ This project follows the **MVC pattern**:
 
 ---
 
+## 📸 Screenshots
+
+### Main Screen
+![Main](screenshots/Mainscreen.png)
+
+### Details Screen
+![Details](screenshots/Detailscreen.png)
+
+### Map Screen
+![Map](screenshots/Map.png)
+
+---
 
 ## ⚙️ Setup & Installation
 
