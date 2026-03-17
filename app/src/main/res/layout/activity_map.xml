@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapActivity">
+
+    <!-- Map View im Hintergrund -->
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <!-- AppBar mit Toolbar für den Titel -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <!-- Standortanzeige als CardView direkt unter der Toolbar, nur Name -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardLocationTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appBarLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp">
+
+        <TextView
+            android:id="@+id/tvMapLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ort wird geladen..."
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="12dp" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Klassischer Zurück-Button unten links -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/fabBackToMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Zurück"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        app:icon="@drawable/ic_arrow_back"
+        app:iconGravity="textStart"
+        app:iconPadding="8dp"
+        app:cornerRadius="24dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+    <!-- Location Info Card, bleibt unten (optional, kann leer bleiben) -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardLocationInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp">
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Floating Action Button for Centering, positioned above the card -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabCenterLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cardLocationInfo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_my_location"
+        app:fabSize="normal" />
+
+</RelativeLayout> 

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="current_weather">Aktuelles Wetter</string>
+    <string name="weather_description">Wetterbeschreibung</string>
+    <string name="min_temp">Min: --°C</string>
+    <string name="max_temp">Max: --°C</string>
+    <string name="weather_details">Wetterdetails</string>
+    <string name="humidity">Luftfeuchtigkeit:</string>
+    <string name="pressure">Luftdruck:</string>
+    <string name="wind_speed">Windgeschwindigkeit:</string>
+    <string name="details">DETAILS</string>
+    <string name="map">KARTE</string>
+    <string name="last_updated">Aktualisiert:</string>
+    <string name="loading_location">Standort wird geladen...</string>
+    <string name="location_unavailable">Standort nicht verfügbar</string>
+    <string name="permission_denied">Berechtigung verweigert</string>
+    <string name="weather_data_unavailable">Wetterdaten nicht verfügbar</string>
+    <string name="temperature_information">Temperaturinformationen</string>
+    <string name="current_temperature">Aktuelle Temperatur:</string>
+    <string name="minimum_temperature">Minimale Temperatur:</string>
+    <string name="maximum_temperature">Maximale Temperatur:</string>
+    <string name="weather_conditions">Wetterbedingungen</string>
+    <string name="atmospheric_conditions">Atmosphärische Bedingungen</string>
+    <string name="atmospheric_pressure">Luftdruck:</string>
+    <string name="back_to_main">ZURÜCK ZUM HAUPTBILDSCHIRM</string>
+    <string name="location_coordinates">Location Coordinates</string>
+    <string name="latitude">Latitude:</string>
+    <string name="longitude">Longitude:</string>
+    <string name="current_location">Aktueller Standort</string>
+    <string name="back">Zurück</string>
+    <string name="open_settings">Einstellungen öffnen</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="enable_gps_message">Ihre Standortdienste (GPS) scheinen deaktiviert zu sein. Möchten Sie sie jetzt aktivieren?</string>
+    <string name="location_permission_required">Standortberechtigung erforderlich</string>
+    <string name="go_to_settings">Zu den Einstellungen</string>
+    <string name="network_error">Netzwerkfehler. Bitte prüfen Sie Ihre Internetverbindung.</string>
+    <string name="api_key_error">API-Schlüssel ist ungültig oder noch nicht aktiv. Bitte warten Sie bis zu 2 Stunden, nachdem Sie einen neuen Schlüssel erstellt haben.</string>
+    <string name="weather_not_found">Wetterdaten für den Standort nicht gefunden.</string>
+</resources>
